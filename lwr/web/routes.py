@@ -174,7 +174,9 @@ def download_output(manager, job_id, name, output_type="direct"):
 
 
 @LwrController(response_type='json')
-def output_path(manager, job_id, name, output_type="directory"):
+def output_path(manager, job_id, name, output_type="direct"):
+    # output_type should be one of...
+    #   work_dir, direct
     # Added for non-transfer downloading.
     return {"path": _output_path(manager, job_id, name, output_type)}
 
