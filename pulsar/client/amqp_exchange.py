@@ -20,7 +20,7 @@ DEFAULT_TIMEOUT = 0.2
 DEFAULT_HEARTBEAT = 580
 
 
-class LwrExchange(object):
+class PulsarExchange(object):
     """ Utility for publishing and consuming structured Pulsar queues using kombu.
     This is shared between the server and client - an exchange should be setup
     for each manager (or in the case of the client, each manager one wished to
